@@ -1,19 +1,26 @@
 import Head from "next/head";
 import { Button } from "react-bootstrap";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import Layout from "../components/templates/layout";
 
 export default function Home() {
   return (
     <Layout>
+      <style jsx>
+        {`
+          .title {
+            color: red;
+          }
+        `}
+      </style>
       <div className="container">
         <Head>
           <title>KujibiKing</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className={styles.main}>
+        <main className={`${styles.main} title`}>
           <h1 className={styles.title}> "KujibiKing" </h1>
 
           <div>
