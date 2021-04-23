@@ -45,11 +45,22 @@ export default function Menu() {
           </li>
         </ul>
       </nav>
+      <style jsx>{`
+        span.open:first-child {
+          transform: translateY(6px) rotate(150deg);
+        }
+        span.open:nth-child(2) {
+          transform: translateY(-2px) rotate(-150deg);
+          margin-bottom: 0;
+        }
+      `}</style>
       <div className="container">
         <div className={styles.humburger} onClick={() => menuFunction()}>
           <span className={openMenu ? "open" : undefined}></span>
           <span className={openMenu ? "open" : undefined}></span>
-          <p className={openMenu ? "open" : undefined}>Menu</p>
+          <p className={openMenu ? "open" : undefined}>
+            {!openMenu ? "Menu" : "Close"}
+          </p>
         </div>
       </div>
     </>
