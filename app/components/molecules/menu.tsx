@@ -14,33 +14,28 @@ export default function Menu() {
       <nav>
         <ul>
           <li>
-            <Link href="/">
-              <a>メニュー</a>
+            <Link href="/timeline">
+              <a>HOME</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a>メニュー</a>
+            <Link href="/ranking">
+              <a>ランキング</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a>メニュー</a>
+            <Link href="/regist">
+              <a>登録</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a>メニュー</a>
+            <Link href="/mypage">
+              <a>マイページ</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a>メニュー</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>メニュー</a>
+            <Link href="/account">
+              <a>アカウント設定</a>
             </Link>
           </li>
         </ul>
